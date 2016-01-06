@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2009-2011, Trustees of Indiana University
+    All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+
+      Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+
+      Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+
+      Neither the name of Indiana University nor the names of its
+      contributors may be used to endorse or promote products derived from this
+      software without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+    LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+    CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+    CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+    POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="vfrbr-jpa" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionCharacteristic</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionContext</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionDate</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionExtent</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionForm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionGenre</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionKey</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionLanguage</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionPerformanceMedium</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionPerformancePlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionResponse</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionScoreType</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionSummarization</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionTitle</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemAccessRestriction</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemAcquisitionSource</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemCallNumber</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemCondition</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemCopyNumber</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemExhibitionHistory</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemIdentifier</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemLocation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemMark</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemProvenance</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemTreatmentHistory</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemTreatmentSchedule</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationAAASource</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationAccessAddress</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationAccessMode</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationAccessRestriction</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationAccompanyingLanguage</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationCaptureMode</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationCarrierDimension</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationCarrierExtent</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationCarrierForm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationDesignation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationFabricator</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationFileCharacteristic</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationIdentifier</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPhysicalMedium</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPlayingSpeed</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPublicationDate</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPublicationJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPublicationPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPublicationPublisher</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationReproductionCharacteristic</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationResponsibility</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationSeriesStatement</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationSoundKind</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationTapeConfiguration</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationTitle</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyActivityField</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyAddress</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyDate</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyDesignation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyHistory</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyLanguage</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyName</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyNumber</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.CorporateBodyPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyActivityField</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyDate</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyHistory</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.FamilyType</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonActivityField</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonAddress</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonAffiliation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonBiography</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonBirthPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonCountry</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonDate</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonDeathPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonDesignation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonGender</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonLanguage</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonName</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonProfession</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonResidencePlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.PersonTitle</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.ResponsiblePartyJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.ConceptJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.ConceptNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.ConceptTerm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.EventJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.EventNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.EventTerm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.ObjectJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.ObjectNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.ObjectTerm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.PlaceJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.PlaceNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.PlaceTerm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.SubjectJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkAudience</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkCharacteristic</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkCompositionPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkContext</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkDate</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkDesignation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkForm</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkHistory</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkJpa</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkKey</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkLanguage</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkNote</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkOriginPlace</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkPerformanceMedium</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkSubjectHeading</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkTitle</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.CorporateBodyToCorporateBody</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.CorporateBodyToPerson</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ExpressionToExpression</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ExpressionToManifestation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ExpressionToResponsibleParty</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ExpressionToWork</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.FamilyToPerson</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ItemToItem</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ItemToResponsibleParty</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ManifestationToItem</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ManifestationToManifestation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ManifestationToResponsibleParty</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.PersonToPerson</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.ResponsiblePartyToResponsibleParty</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkToExpression</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkToItem</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkToManifestation</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkToResponsibleParty</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkToSubjectEntity</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkToWork</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.expression.ExpressionAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.item.ItemAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.manifestation.ManifestationPublicationAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.responsibleparty.ResponsiblePartyAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.subject.SubjectAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.entity.work.WorkAttribSimple</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkHasComposer</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkHasCreator</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.WorkHasSubject</class>
+    <class>edu.indiana.dlib.vfrbr.persist.relation.FamilyToFamily</class>
+    <properties>
+      <property name="eclipselink.jdbc.read-connections.max" value="20"/>
+      <property name="eclipselink.jdbc.read-connections.shared" value="true"/>
+      <property name="eclipselink.jdbc.write-connections.max" value="20"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="eclipselink.target-database" value="MySQL"/>
+      <property name="eclipselink.weaving" value="static"/>
+    </properties>
+  </persistence-unit>
+</persistence>
