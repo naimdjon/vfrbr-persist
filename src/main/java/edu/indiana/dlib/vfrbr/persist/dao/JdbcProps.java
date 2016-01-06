@@ -1,21 +1,21 @@
 /**
  * Copyright 2009-2011, Trustees of Indiana University
  * All rights reserved.
- *
+ * <p/>
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- *
- *   Redistributions of source code must retain the above copyright notice,
- *   this list of conditions and the following disclaimer.
- *
- *   Redistributions in binary form must reproduce the above copyright notice,
- *   this list of conditions and the following disclaimer in the documentation
- *   and/or other materials provided with the distribution.
- *
- *   Neither the name of Indiana University nor the names of its
- *   contributors may be used to endorse or promote products derived from this
- *   software without specific prior written permission.
- *
+ * <p/>
+ * Redistributions of source code must retain the above copyright notice,
+ * this list of conditions and the following disclaimer.
+ * <p/>
+ * Redistributions in binary form must reproduce the above copyright notice,
+ * this list of conditions and the following disclaimer in the documentation
+ * and/or other materials provided with the distribution.
+ * <p/>
+ * Neither the name of Indiana University nor the names of its
+ * contributors may be used to endorse or promote products derived from this
+ * software without specific prior written permission.
+ * <p/>
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -30,9 +30,10 @@
  */
 package edu.indiana.dlib.vfrbr.persist.dao;
 
+import org.apache.log4j.Logger;
+
 import java.io.InputStream;
 import java.util.Properties;
-import org.apache.log4j.Logger;
 
 /**
  *  Access to jdbc connection properties.
@@ -92,7 +93,7 @@ public class JdbcProps {
                 // log this as an error
                 throw new Exception(
                         "ClassLoader.getResourceAsStream(\"jdbc.properties\")"
-                        + " returned null, no jdbc properties, aborting...");
+                                + " returned null, no jdbc properties, aborting...");
             } else {
                 // we found a file, load that
                 jdbcProps.load(inputStream);
@@ -135,8 +136,7 @@ public class JdbcProps {
      * @return String property value for javax.persistence.jdbc.password
      */
     protected final String getPassword() {
-
-        return jdbcProps.getProperty("javax.persistence.jdbc.password");
+        return System.getProperty("javax.persistence.jdbc.password", jdbcProps.getProperty("javax.persistence.jdbc.password"));
     }
 
     /**
