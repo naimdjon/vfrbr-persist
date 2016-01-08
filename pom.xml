@@ -24,15 +24,9 @@
   </repositories>
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.persistence </groupId>
+      <groupId>org.eclipse.persistence</groupId>
       <artifactId>eclipselink</artifactId>
       <version>2.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
@@ -169,4 +163,11 @@
   </properties>
   <description>VFRBR JPA persistence.
   </description>
+    <!--mvn deploy:deploy-file \
+    -DgroupId=edu.indiana.dlib \
+    -DartifactId=vfrbr-persist \
+    -Dversion=1.1-SNAPSHOT \
+    -DrepositoryId=snapshots \
+    -Dfile=target/vfrbr-persist-1.1-SNAPSHOT.jar \
+    -Durl=http://xxx:xxxx@dijon.idi.ntnu.no/nexus/content/repositories/snapshots/-->
 </project>
